@@ -30,7 +30,9 @@ public class Prime {
         System.out.println("primesList:" + primes(2, 20));
     }
     
-    // imperative approach
+    /**
+     * Answer for Question 1 imperative approach
+     */
     private static boolean isPrimeInImperativeApproach(int num) {
         
         if (num <= 1)
@@ -44,7 +46,9 @@ public class Prime {
         return num > 1;
     }
     
-    // declarative approach 1
+    /**
+     * Answer for Question 1 declarative approach
+     */
     private static boolean isPrimeInFunctionalApproach1(int num) {
         
         return num > 1 &&
@@ -52,7 +56,9 @@ public class Prime {
                         .noneMatch(divisor -> num % divisor == 0);
     }
     
-    // declarative approach 2
+    /**
+     * Answer for Question 1 declarative approach 2
+     */
     private static boolean isPrimeInFunctionalApproach2(int num) {
         
         return num > 1 &&
@@ -60,7 +66,22 @@ public class Prime {
                         .noneMatch(divisor -> num % divisor == 0);
     }
     
+    /**
+     * Answer for Question 3
+     * @return The total count of the prime numbers
+     */
+    private static long primeNumCount() {
+        
+        List<Integer> numbersList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        
+        return numbersList.stream()
+                .filter(Prime::isPrimeInFunctionalApproach1)
+                .count();
+    }
     
+    /**
+     * Answer for Question 2
+     */
     public static List<Integer> primes(final int fromNumber, final int count) {
         return Stream.iterate(primeAfter(fromNumber - 1), Prime::primeAfter)
                 .limit(count)
@@ -72,19 +93,6 @@ public class Prime {
             return number + 1;
         else
             return primeAfter(number + 1);
-    }
-    
-    
-    /**
-     * @return The total count of the prime numbers
-     */
-    private static long primeNumCount() {
-        
-        List<Integer> numbersList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-        
-        return numbersList.stream()
-                .filter(Prime::isPrimeInFunctionalApproach1)
-                .count();
     }
 }
 
