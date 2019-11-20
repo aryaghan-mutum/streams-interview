@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 /**
  * What are the results when the below methods are executed?
+ * What are the differences between func, func2 and func3
  */
 public class StreamsQuestions1 {
     
@@ -18,6 +19,9 @@ public class StreamsQuestions1 {
         func3();
     }
     
+    /**
+     * what is the result the method generates?
+     */
     public static void func() {
         
         List<Integer> numList = numbers.stream()
@@ -29,6 +33,9 @@ public class StreamsQuestions1 {
         numList.forEach(System.out::println);
     }
     
+    /**
+     * what is the result the method generates?
+     */
     public static void func2() {
         
         System.out.println(numbers.stream()
@@ -37,6 +44,9 @@ public class StreamsQuestions1 {
                 .collect(Collectors.averagingInt(n -> n)));
     }
     
+    /**
+     * what is the result the method generates?
+     */
     public static void func3() {
         
         System.out.println(numbers.stream()

@@ -3,9 +3,6 @@ package com.rccl.interview.streams.general_questions;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Convert the imperative approach into functional  approach for the below method.
- */
 public class AnswerStreamsImperative {
     
     public static final List<String> citiesList = Arrays.asList("miami", "columbus", "san francisco", "fargo");

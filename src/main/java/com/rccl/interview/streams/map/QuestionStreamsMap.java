@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * Below is the method that squares(doubles) each number in a list using traditional approach
- * Write a method in functional style to achieve the same result using map(), distinct() and collect() operators
+ * Write a method in functional style to achieve the same result using map() operator
  */
 public class QuestionStreamsMap {
     
@@ -20,9 +20,10 @@ public class QuestionStreamsMap {
     
     public static void getSquaresImperativeApproach() {
         
-        List<Double> squaresList = new ArrayList<Double>();
+        List<Double> squaresList = new ArrayList<>();
         
         for (Double number : doubleNumbersList) {
+            
             Double square = new Double(number.intValue() * number.intValue());
             
             if (!squaresList.contains(square)) {

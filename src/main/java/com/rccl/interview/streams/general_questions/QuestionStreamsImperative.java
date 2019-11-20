@@ -15,10 +15,14 @@ public class QuestionStreamsImperative {
         getACityFromList();
     }
     
+    /**
+     * The procedure iterates each city in a list and when the city=fargo then return true, otherwise false.
+     */
     public static void getACityFromList() {
         
         // imperative approach 1:
         boolean found = false;
+        
         for (int i = 0; i < citiesList.size(); i++) {
             if (citiesList.get(i).equals("fargo")) {
                 found = true;

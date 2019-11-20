@@ -8,6 +8,10 @@ import java.util.stream.Collectors;
  * flatMap() :
  * 1. flatMap() is a mix of map() and flat() functions.
  * 2. It transforms and flattens the items in a stream
+ *
+ *
+ * Here is the Input: List("BANANA", "APPLE", "GRAPES")
+ * Get the unique chars Output: [P, A, B, R, S, E, G, L, N]
  */
 
 public class QuestionStreamsFlatMap {
@@ -23,8 +27,8 @@ public class QuestionStreamsFlatMap {
     }
     
     /**
-     * Question: Why The below program doesn't prints the unique characters?
-     * Answer: The method doesn't prints the unique characters because the map returns an array of String[] for each fruit.
+     * Question: Why The below program doesn't print the unique characters?
+     * Answer: The method doesn't print the unique characters because the map returns an array of String[] for each fruit.
      * But we need it to return a Stream<String> of unique characters
      */
     public static void getUniqueCharsFromListOfFruitsFunc1() {

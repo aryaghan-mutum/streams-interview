@@ -16,7 +16,6 @@ public class AnswerStreamsReduce {
         getSumFunctionalApproach2();
         getSumFunctionalApproach3();
         getSumFunctionalApproach4();
-        
     }
     
     public static void getSumFunctionalApproach1() {
@@ -25,7 +24,6 @@ public class AnswerStreamsReduce {
     }
     
     public static void getSumFunctionalApproach2() {
-        
         System.out.println("Sum in Functional approach 2: " + doubleNumbersList.stream()
                 .reduce(0.0, Double::sum));
     }
