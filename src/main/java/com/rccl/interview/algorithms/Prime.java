@@ -15,7 +15,7 @@ import java.util.stream.Stream;
  * Write a method that count the total count of prime numbers from this list: Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
  *
  * Question 3:
- * Write a method that generates a list of prime from 2 to 20
+ * Write a method that generates a list of prime numbers from 2 to count: 20
  *
  */
 public class Prime {
