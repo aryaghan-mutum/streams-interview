@@ -1,6 +1,6 @@
-package com.rccl.interview.streams;
+package com.rccl.interview.theory;
 
-public class TheoreticalJava8Questions {
+public class StreamsTheoryQuestAndAns {
     
     /**
      * Question:
