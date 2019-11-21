@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Question:
  * The below procedure converts a list of cities into uppercase and sorts in ascending order using imperative style of programming
- * Write a procedure that iterative each city in a list and sort it in ascending order using functional programming
+ * Write a procedure that iterates each city in a list and sort it in ascending order using functional programming
  */
 public class QuestionStreamsSort {
     

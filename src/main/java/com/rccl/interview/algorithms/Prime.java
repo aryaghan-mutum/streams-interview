@@ -8,11 +8,15 @@ import java.util.stream.Stream;
 
 /**
  * Question 1:
- * Write a method that check if a number is prime? For example: 3 is a prime, 4 is not.
- * You may write the method either in imperative or declarative style.
+ * Write a method that check if a number is prime?
+ *
+ * Hint: Any number which is divided by 2 and the remainder is 0 is not a prime for numbers greater than equal to 2.
+ * For example: 3 is a prime, 4 is not.
+ *
+ * You may write a method either in imperative or declarative style.
  *
  * Question 2:
- * Write a method that count the total count of prime numbers from this list: Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+ * Write a method that returns the total count of prime numbers from this list: Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
  *
  * Question 3:
  * Write a method that generates a list of prime numbers from 2 to count: 20
@@ -67,7 +71,7 @@ public class Prime {
     }
     
     /**
-     * Answer for Question 3
+     * Answer for Question 2
      * @return The total count of the prime numbers
      */
     private static long primeNumCount() {
@@ -75,12 +79,12 @@ public class Prime {
         List<Integer> numbersList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         
         return numbersList.stream()
-                .filter(Prime::isPrimeInFunctionalApproach1)
+                .filter(Prime::isPrimeInFunctionalApproach2)
                 .count();
     }
     
     /**
-     * Answer for Question 2
+     * Answer for Question 3
      */
     public static List<Integer> primes(final int fromNumber, final int count) {
         return Stream.iterate(primeAfter(fromNumber - 1), Prime::primeAfter)

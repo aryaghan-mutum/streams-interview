@@ -1,2 +1,2 @@
-### RCCL Interview Questions & Answers on Automation:
+### RCCL Interview Questions & Answers on Automation
 

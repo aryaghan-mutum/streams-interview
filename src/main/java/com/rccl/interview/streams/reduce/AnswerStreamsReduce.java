@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * reduce() :
- * It takes two arguments and returns a scalar. Therefore is a terminal operator.
+ * It takes two arguments and returns a scalar (single value). Therefore is a terminal operator.
  */
 public class AnswerStreamsReduce {
     
