@@ -12,13 +12,13 @@ public class QuestionStreamsImperative {
     
     public static void main(String[] args) {
         
-        getACityFromList();
+        isFargoPresent();
     }
     
     /**
      * The procedure iterates each city in a list and when the city=fargo then return true, otherwise false.
      */
-    public static void getACityFromList() {
+    public static void isFargoPresent() {
         
         // imperative approach 1:
         boolean found = false;

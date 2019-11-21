@@ -9,29 +9,28 @@ public class AnswerStreamsImperative {
     
     public static void main(String[] args) {
     
-        getACityFromListFunctionalApproach1();
-        getACityFromListFunctionalApproach2();
-        getACityFromListFunctionalApproach3();
+        isFargoPresentFunctionalApproach1();
+        isFargoPresentFunctionalApproach2();
+        printCityName();
     }
     
-    public static void getACityFromListFunctionalApproach1() {
+    public static void isFargoPresentFunctionalApproach1() {
         System.out.println("City found functional approach 1: " + citiesList.stream()
                 .filter(city -> city.equals("fargo"))
                 .findAny()
                 .isPresent());
     }
     
-    public static void getACityFromListFunctionalApproach2() {
+    public static void isFargoPresentFunctionalApproach2() {
         System.out.println("City found functional approach 2: " + citiesList.stream()
                 .anyMatch(city -> city.equals("fargo")));
     }
     
-    // functional approach 3. Prints the city name:
-    public static void getACityFromListFunctionalApproach3() {
+    //  Prints the city name:
+    public static void printCityName() {
         citiesList.stream()
-                .filter(city -> city.endsWith("columbus"))
+                .filter(city -> city.endsWith("fargo"))
                 .findAny()
                 .ifPresent(city -> System.out.println("City found functional approach 4: " + city));
-        
     }
 }
