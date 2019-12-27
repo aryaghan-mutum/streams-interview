@@ -13,7 +13,7 @@ public class AnswerStreamsForEach {
         Random random = new Random();
         random.doubles()
                 .limit(5)
-                .forEach(randNum -> System.out.println("Rand # functional approach: " + randNum));
+                .forEach(randNum -> System.out.println(randNum));
         
     }
     

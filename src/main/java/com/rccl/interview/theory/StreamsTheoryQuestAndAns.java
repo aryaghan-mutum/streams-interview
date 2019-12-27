@@ -85,6 +85,6 @@ public class StreamsTheoryQuestAndAns {
      *
      * Answer:
      * flatMap() If you have a list but you want to combine all elements of lists into just one list. In this case, you use flatMap() for flattening.
-     * map(): It allows you to transform one type of object to other by applying a function..
+     * map(): It allows you to transform one type of object to other by applying a function.
      */
 }
