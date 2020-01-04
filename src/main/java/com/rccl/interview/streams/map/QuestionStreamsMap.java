@@ -3,7 +3,6 @@ package com.rccl.interview.streams.map;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 /**
  * Below is the method that squares(doubles) each number in a list using traditional approach
@@ -17,7 +16,6 @@ public class QuestionStreamsMap {
     public static void main(String[] args) {
         
         getSquaresImperativeApproach();
-        
     }
     
     public static void getSquaresImperativeApproach() {
@@ -34,6 +32,5 @@ public class QuestionStreamsMap {
         }
         System.out.println("Square the numbers in imperative approach: " + squaresList);
     }
-    
     
 }
