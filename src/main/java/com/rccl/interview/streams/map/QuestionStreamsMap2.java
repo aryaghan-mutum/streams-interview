@@ -11,7 +11,7 @@ public class QuestionStreamsMap2 {
         System.out.println(doubleTheNumbers());
     }
     
-  
+    
     /**
      * Given a list of numbers, how would you return a list of the square of each number?
      * For example, given [1, 2, 3, 4, 5] you should return [1, 4, 9, 16, 25].
@@ -21,7 +21,6 @@ public class QuestionStreamsMap2 {
         return numbersList.stream()
                 .map(n -> n * n)
                 .collect(Collectors.toList());
-        
     }
     
 }

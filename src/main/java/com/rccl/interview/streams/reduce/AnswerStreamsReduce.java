@@ -2,8 +2,7 @@ package com.rccl.interview.streams.reduce;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.IntStream;
+import java.util.function.BinaryOperator;
 import java.util.stream.Stream;
 
 /**
@@ -19,7 +18,7 @@ public class AnswerStreamsReduce {
         getSumFunctionalApproach2();
         getSumFunctionalApproach3();
         getSumFunctionalApproach4();
-        
+        getSumFunctionalApproach5();
     }
     
     public static void getSumFunctionalApproach1() {
@@ -42,5 +41,13 @@ public class AnswerStreamsReduce {
                 .mapToDouble(n -> n)
                 .sum());
     }
+    
+    public static void getSumFunctionalApproach5() {
+        int sum = Stream.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+                .reduce(0, (e1, e2) -> e1 + e2);
+        
+        System.out.println(sum);
+    }
+    
     
 }
